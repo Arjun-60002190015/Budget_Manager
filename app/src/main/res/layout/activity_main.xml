@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/sign_upTv"
+        android:text="Sign Up"
+        android:layout_marginTop="35dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="25sp"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/sign_upTv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Please Enter Information"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:id="@+id/enterinfoTv"></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/enterinfoTv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/white"
+        android:hint="Enter Name"
+        android:textColorHint="@color/white"
+        android:inputType="textPersonName"
+        android:id="@+id/nameEtv"
+        android:textColor="@color/white"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/nameEtv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/white"
+        android:hint="Enter Profession"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:id="@+id/professionEtv"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/professionEtv"
+        android:textColorHint="@color/white"
+        android:hint="Birthday(DDMMYYYY)"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/birthdayEtv"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/birthdayEtv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/white"
+        android:hint="Enter Salary"
+
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:id="@+id/salaryEtv"></EditText>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintTop_toBottomOf="@id/salaryEtv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/submitBtn"
+        android:background="@drawable/round_btn"></Button>
+
+
+    <Button
+        android:id="@+id/gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load profile image from gallery"
+        app:layout_constraintTop_toBottomOf="@id/submitBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="21sp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="396dp" ></Button>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pickedImage"></ImageView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
